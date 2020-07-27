@@ -3,6 +3,7 @@ import { StyleSheet, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard }
 import Header from './components/Header.js';
 import Todoitem from './components/Todoitem.js';
 import AddTodo from './components/AddTodo.js';
+import Sandbox from './components/Sandbox.js';
 
 export default function App() {
 
@@ -53,6 +54,10 @@ export default function App() {
         </View>
       </View>
     </TouchableWithoutFeedback>
+
+    
+      // <Sandbox />
+    
   );
 }
 
@@ -64,10 +69,12 @@ const styles = StyleSheet.create({
   },
 
   content: {
-    padding: 40
+    padding: 40,
+    flex:1
   },
 
   list: {
-    marginTop: 20
+    marginTop: 20,
+    flex: 1
   }
 });
